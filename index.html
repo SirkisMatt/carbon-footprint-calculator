@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="title">
+    <h1>What are your emissions?</h1> 
+    <p>Even though its ultimately up to a handful of corporations and our governing bodies, it is important to be aware our your impact so that you can hold others accountable for theirs.</p>
+</div>
+
+<!--------------------Transport Buttons------------------->
+<div class="transport">
+    <div class="dropdown">
+        <button class="dropbtn">Car</button>
+        <div class="dropdown-content">
+            <div id="diesel-car"><p>Diesel Car</p></div>
+            <button id="petrol-car">Petrol Car</button>
+            <button id="hybrid">Hybrid Car</button>
+            <button id="diesel-van">Diesel Van</button>
+            <button id="petrol-van">Petrol Van</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Motorbike</button>
+        <div class="dropdown-content">
+            <button id="small">Small</button>
+            <button id="medium">Medium</button>
+            <button id="Large">Large</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Public Transit</button>
+        <div class="dropdown-content">
+            <button id="classic-bus">Classic Bus</button>
+            <button id="eco-bus">Eco Bus</button>
+            <button id="train">Train</button>
+            <button id="ferry">Ferry</button>
+        </div>
+    </div>
+    <div class="dropdown"><button class="plane">Plane</button></div>
+</div>
+
+<div class="slidecontainer">
+    <input type="range" min="1" max="10000" value="1" class="slider" id="myRange">
+    <p>Value: <span id="transport-miles"></span> miles</p>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"crossorigin="anonymous"></script>
+    <script src="index.js"></script>    
+</body>
+</html>
